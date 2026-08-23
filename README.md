@@ -30,8 +30,10 @@ The analysis uses Python and data analysis techniques to clean, explore, and vis
 ```text
 Saudi-Stock-Exchange-Tadawul/
 │
-├── DataCleaning.ipynb
-├── Tadawul_stcks_23_4.xlsx
+├── Data
+      └── Tadawul_stcks_23_4.xlsx
+├── Notebook
+      └── DataCleaning.ipynb
 ├── requirements.txt
 └── README.md
 ```
