@@ -80,7 +80,7 @@ Creating charts and visualizations to identify trends and make comparisons betwe
 
 * **Liquidity is concentrated in a few giants.** The top companies by total value traded — **ALRAJHI, ALINMA, SAUDI ARAMCO, SABIC** — are dominated by major banks and Aramco, meaning market-wide averages are implicitly driven by a handful of large financial names.
 
-> Full write-up with charts and methodology is available in [`Tadawul_Insights_Report.md`](./Tadawul_Insights_Report.md).
+> Full write-up with charts and methodology is available in [`Tadawul_Insights_Report.md`](./Reports/Tadawul_Insights_Report.md).
 
 ## 🚀 Getting Started
 
@@ -112,16 +112,6 @@ jupyter notebook
 
 Then open the analysis notebook located in the `notebooks` folder.
 
-## 📌 Future Improvements
-
-* Add more recent Tadawul market data.
-* Perform advanced statistical analysis.
-* Investigate relationships between different market indicators.
-* Add interactive visualizations.
-* Develop predictive models for further analysis.
-* Replace mean-imputation for non-trading stocks with an explicit `is_suspended` flag.
-* Add a sector volatility index (standard deviation of `perc_Change`) alongside average performance.
-* Build a liquidity-weighted (rather than simple-average) sector performance metric.
 
 ## 👩‍💻 Author
 
