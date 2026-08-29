@@ -83,20 +83,3 @@ Top 10 companies by total value traded were dominated by banks and Aramco:
 
 ---
 
-## 💡 Innovation Ideas — Where This Analysis Could Go Next
-
-1. **Replace mean-imputation with a "suspended stock" flag.** Instead of filling `open/high/low` with the dataset mean, add a boolean `is_suspended` column for tickers with no trading activity. This preserves the real story (a stock not trading) instead of inventing a synthetic price.
-
-2. **Volatility index by sector.** Instead of just the *mean* `perc_Change` per sector, plot the *standard deviation* per sector — this identifies which sectors are riskiest/most volatile, not just which lost the most. Combine both into a risk/return scatter (sector risk vs. sector average return).
-
-3. **Liquidity-weighted sector performance.** The current sector average treats every company equally. A value-traded-weighted average would better reflect how the "market" actually moved, since a few giant names dominate volume.
-
-4. **A price-to-activity efficiency metric.** `value_traded / no_trades` gives an "average trade size" — useful for spotting institutional-heavy stocks (large, infrequent trades) vs. retail-heavy stocks (many small trades).
-
-5. **Annotated crash-and-recovery timeline.** Since this window sits inside the COVID crash, overlaying key COVID-19 news dates (lockdown announcements, oil price crash, etc.) on the sector performance chart would turn a generic time series into a narrative-driven chart.
-
-6. **Anomaly/outlier flagging.** With `perc_Change` ranging from -12.9% to +19.9%, a simple z-score or IQR-based outlier flag per stock-day would surface the single biggest single-day movers automatically, rather than relying on manual `nlargest`/`nsmallest` calls.
-
----
-
-*Report generated from the cleaned dataset and charts already present in `DataCleaning.ipynb`.*
